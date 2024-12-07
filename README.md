@@ -44,10 +44,24 @@ Figure 02  Encoder 8 * 3
 
 Developed by: RegisterNumber:
 */
+```
+module ex5(din,a,b,c);
+input[0:7]din;
+output a,b,c;
+assign a=(din[4]|din[5]|din[6]|din[7]);
+assign b=(din[2]|din[3]|din[6]|din[7]);
+assign c=(din[1]|din[3]|din[5]|din[7]);
+endmodule
+```
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![Screenshot 2024-12-07 171459](https://github.com/user-attachments/assets/e56e2117-2cb8-4ece-9750-a0ba7f2ff8eb)
+
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![Screenshot 2024-12-07 171711](https://github.com/user-attachments/assets/190b34be-e06d-4fc7-9721-d729e7a00c36)
+
 
 **RESULTS**
 
